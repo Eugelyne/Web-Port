@@ -1,10 +1,17 @@
+/* Basic reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #493131;
 }
 
 #app {
@@ -12,6 +19,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Fixed width for better layout */
 }
 
 .form-container {
@@ -25,6 +33,7 @@ input {
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px; /* Increased font size for better readability */
 }
 
 button {
@@ -34,12 +43,14 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px; /* Increased font size for better readability */
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #218838; /* Darker green on hover */
 }
 
 .error {
     color: red;
+    font-size: 14px; /* Slightly smaller font for error messages */
 }
